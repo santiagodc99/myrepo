@@ -1,0 +1,39 @@
+<html>
+<head>
+  <title>Calculadora</title>
+  <link rel= "icon" type= "image/ico" href="icons/calculator.png"/>
+</head>
+<body background="images/2.png" >
+<center><b><font face="Verdana" size="15" color="BLACK">Calculadora basica</font></b></center><br>
+<table border="0" align="center">
+  <form name="frm1" action= "calculadora.php" method= "post">
+    <tr>
+              <td><b><font face="Arial" color="BLACK">Digite 1er numero:</font></b><br>
+              <input type="text" name= "num1" required><br><br></td>
+            </tr>
+        <tr>
+                  <td><b><font face="Arial" color="BLACK">Digite 2do numero:</font></b><br>
+                  <input type="text" name= "num2" required><br><br></td>
+                </tr>
+
+        <tr>
+                                  <td><b><font face="Arial" color="BLACK">Seleccione operacion:</font></b><br>
+                                    <select name="operar" >
+                                      <option></option>
+                                      <option value="sum">Suma</option>
+                                      <option value="res">Resta</option>
+                                      <option value="mult">Multiplicacion</option>
+                                      <option value="div">Division</option>
+                                      <option value="pote">Potencia</option>
+                                      <option value="raiz">Raiz cuadrada</option>
+                                      <option value="Todas">Todas las operaciones</option>
+                                    </select></td>
+                                </tr>
+                                <tr>
+                                  <br><td align="center"><input type="submit" value="Calcular"><br></td></td>
+                                </tr>
+                        </form>
+</table>
+
+</body>
+</html>
