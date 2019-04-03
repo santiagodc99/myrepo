@@ -53,5 +53,20 @@ echo "<table border=1><tr>";
  }
 echo "</tr></table>";
 
+echo "<br>Tabla 3<br>";
+echo "<table border=1>";
 
+ while($n1 = $i){
+
+   $i = $_POST['n1'];
+
+   if ($i%2==0){
+
+       echo "<tr><td>".  $i. "</td></tr>";
+   }else{
+       echo "<tr><td>". $i. "</td></tr>";
+   }
+     $i++;
+ }
+ echo "</tr></table>";
 ?>

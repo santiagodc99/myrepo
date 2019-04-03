@@ -90,7 +90,7 @@ for ($i=1;$i<=10;$i++) {
     else {
       $impar=$impar+1;
     }
-    echo $aleatorio." ";
+    echo $al." ";
     }
     echo "<table border =1>";
     echo "<Br><Br><tr><td>Pares: </td><td> ".$par." </td></tr>";
@@ -122,9 +122,9 @@ echo "</table>";
 
   echo "<br><br>";
   echo "<table border=1>";
-  echo "<tr><td>Postivos pares: </td> <td>".$parposi."</td></tr>";
-  echo "<tr><td>Postivos impares: </td> <td>".$imparposi."</td></tr>";
-  echo "<tr><td>Negativos pares: </td> <td>".$parneg."</td></tr>";
-  echo "<tr><td>Negativos impares: </td> <td>".$imparneg."</td></tr>";
+  echo "<tr><td>Postivos pares: </td> <td>".$par1."</td></tr>";
+  echo "<tr><td>Postivos impares: </td> <td>".$impar1."</td></tr>";
+  echo "<tr><td>Negativos pares: </td> <td>".$par2."</td></tr>";
+  echo "<tr><td>Negativos impares: </td> <td>".$impar2."</td></tr>";
 echo "</table>";
  ?>
