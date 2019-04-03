@@ -1,26 +1,3 @@
-<html>
-<head>
-  <title>Taller</title>
-  <link rel= "icon" type= "image/ico" href="icons/calculator.png"/>
-</head>
-<body >
-<center><b><font face="Verdana" size="15" color="BLACK">Desarrollo Taller</font></b></center><br>
-<table border="0" align="center">
-  <form name="frm1" action= "calculadora.php" method= "post">
-    <tr>
-              <td><b><font face="Arial" color="BLACK">Total de numeros generados:</font></b><br>
-              <input type="text" name= "num1" required><br><br></td>
-            </tr>
-            <tr>
-                      <td><b><font face="Arial" color="BLACK">Total de numeros generados:</font></b><br>
-                      <input type="text" name= "num1" required><br><br></td>
-                    </tr>
-
-                        </form>
-</table>
-
-</body>
-</html>
 
 
 <?php
@@ -102,13 +79,52 @@ for ($i=0; $i<=100 ; $i=$i+1) {
 }
 echo "</tr></table>";
 
-echo "</br>8to punto";
-$n1 = $_POST['num1'];
-$n2 = $_POST['num2'];
-$op = $_POST['operar'];
-echo "<table border=1><tr>";
-for ($i=1; $i<=10 ; $i=$i+1) {
-  echo "<td>". rand(1,100)."</td>";
+echo "<br><br>punto 8<br>";
+$par=0;
+$impar=0;
+for ($i=1;$i<=10;$i++) {
+    $al = rand(1,100);
+    if ($al%2==0) {
+      $par=$par+1;
+    }
+    else {
+      $impar=$impar+1;
+    }
+    echo $aleatorio." ";
+    }
+    echo "<table border =1>";
+    echo "<Br><Br><tr><td>Pares: </td><td> ".$par." </td></tr>";
+    echo "<tr> <td>Impares: </td><td> ".$impar." </td></tr>";
+echo "</table>";
+
+echo "<br><br>punto 9<br>";
+$par1=0;
+$impar1=0;
+$par2=0;
+$impar2=0;
+  echo "<table border=1>";
+for ($i=1;$i<=10;$i++) {
+    $rand = rand(-100,100);
+      echo "<td>".$rand." </td>";
+
+    if($rand > 0  &&  ($rand%2)==0){
+      $par1=$par1+1;
+    }else if ($rand > 0  && (($rand%3)==0 || ($rand%3)!=0)) {
+    $impar1=$impar1+1;
+  }
+  if($rand < 0  &&  ($rand%2)==0){
+    $par2=$par2+1;
+  }else if ($rand < 0  && (($rand%3)==0 || ($rand%3)!=0)) {
+  $impar2=$impar2+1;
 }
-echo "</tr></table>";
+}
+echo "</table>";
+
+  echo "<br><br>";
+  echo "<table border=1>";
+  echo "<tr><td>Postivos pares: </td> <td>".$parposi."</td></tr>";
+  echo "<tr><td>Postivos impares: </td> <td>".$imparposi."</td></tr>";
+  echo "<tr><td>Negativos pares: </td> <td>".$parneg."</td></tr>";
+  echo "<tr><td>Negativos impares: </td> <td>".$imparneg."</td></tr>";
+echo "</table>";
  ?>
